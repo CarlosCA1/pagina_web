@@ -1,0 +1,84 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    background-color: #cfc7c7;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
+ h1 {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+ }
+ 
+ 
+ hr {
+    border: 1px solid #0e0d0d;
+    margin: 20px auto;
+    width: 80%;
+ }
+ 
+ 
+ section {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+ }
+ 
+ 
+ section a {
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s;
+ }
+ 
+ 
+ section a:hover {
+    transform: scale(1.05);
+ }
+ 
+ 
+ img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(214, 31, 31, 0.925);
+ }
+ 
+ 
+ .image-container {
+    position: relative;
+    display: inline-block;
+ }
+ 
+ 
+ .image-container img {
+    width: 370px;
+    height: 500px;
+    transition: opacity 0.3s ease-in-out;
+ }
+ 
+ 
+ .image-container .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+ }
+ 
+ 
+ .image-container:hover .hover-image {
+    opacity: 1;
+ }
+ 
+ 
+ .image-container:hover .default-image {
+    opacity: 0;
+ }
+ 
