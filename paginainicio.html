@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda de Ropa - Inicio</title>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Ubuntu', sans-serif;
+margin: 0;
+padding: 0;
+background-color: #1a1a1a; /* fondo oscuro */
+color: #f4f4f4;
+}
+header, nav, section, footer {
+padding: 20px;
+}
+header {
+background-color: #772020; /* gris oscuro */
+background-image: url('img/fondo.jpg');
+opacity: 0.;
+text-align: center;
+}
+header img {
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+box-shadow: 0 4px 8px white;
+}
+nav {
+background-color: #2c2b2b; /* tono rojo oscuro */
+text-align: center;
+}
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+nav ul li {
+display: inline-block;
+margin: 0 50px; /* Ajusta el espacio entre los elementos de la lista */
+}
+nav ul li a {
+color: #f4f4f4;
+text-decoration: none;
+font-size: 24px; /* Aumenta el tamaño de la letra */
+padding: 10px 20px; /* Ajusta el padding para que el marco no se vea afectado */
+}
+/* Estilos para el slider de imágenes */
+.slideshow {
+position: relative;
+width: 100%;
+height: 650px; /* Altura ajustable */
+overflow: hidden;
+}
+.slide {
+position: absolute;
+width: 100%;
+height: 100%;
+background-size: cover;
+background-position: center;
+opacity: 0;
+animation: slideAnimation 12s infinite;
+}
+.slide:nth-child(1) {
+animation-delay: 0s;
+}
+.slide:nth-child(2) {
+animation-delay: 4s;
+}
+.slide:nth-child(3) {
+animation-delay: 8s;
+}
+@keyframes slideAnimation {
+0% { opacity: 0; }
+8% { opacity: 1; }
+25% { opacity: 1; }
+33% { opacity: 0; }
+100% { opacity: 0; }
+}
+footer {
+background-color: #2c2c2c;
+text-align: center;
+color: #f4f4f4;
+}
+.lilita {
+font-family: "Lilita One", serif;
+font-weight: 400;
+font-style: normal;
+color: #fffefe;
+border-radius: 15px;
+box-shadow: 0 4px 8px white;
+background-color: black;
+}
+.lilita2 {
+font-family: "Lilita One", serif;
+font-size: 24px; /* Aumenta el tamaño de la letra */
+font-style: normal;
+color: #000000;
+}
+</style>
+</head>
+<body>
+<header>
+<!-- Se utiliza la imagen del logo -->
+<img src="img/dresshopLogo.png" width="200" alt="Logo Tienda de Ropa">
+<h1 class="lilita">URBAN STYLE SHOP</h1>
+</header>
+
+<nav>
+<ul>
+<li class="lilita2"><a href="catalogo.html">Catálogo</a></li>
+<li class="lilita2"><a href="menu.html">Menú</a></li>
+</ul>
+</nav>
+
+<section>
+<!-- Slider de imágenes para mostrar campañas de publicidad de Pull and Bear -->
+<div class="slideshow">
+<div class="slide" style="background-image: url('img/fachada2.jpg');"></div>
+<div class="slide" style="background-image: url('img/interior1.jpeg');"></div>
+<div class="slide" style="background-image: url('img/interior2.jpeg');"></div>
+</div>
+</section>
+
+<footer>
+<p>&copy; DRESSHOP - Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
